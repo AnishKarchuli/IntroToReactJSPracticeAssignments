@@ -1,5 +1,3 @@
-import "./App.css";
-
 const MathOperations = () => {
   const a = 20;
   const b = 8;
@@ -46,4 +44,4 @@ export default function App() {
       <GetFormattedDate />
     </main>
   );
-}
+};

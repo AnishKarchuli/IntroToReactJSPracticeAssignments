@@ -1,5 +1,3 @@
-import "./App.css";
-
 const Header = () => {
   return (
     <header>
@@ -11,10 +9,23 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
-    
+    </header>  
   )
 }
+
+/*
+const EmployeeDetails = (props) => {
+  return (
+    <div>
+      <h2>Employee Details</h2>
+      <p>Name: {props.employee.name}</p>
+      <p>Position: {props.employee.position}</p>
+      <p>Department: {props.employee.department}</p>
+      <p>Email: {props.employee.email}</p>
+    </div>
+  );
+};
+*/
 
 const EmployeeDetails = ({ employee }) => {
   return (
@@ -53,4 +64,4 @@ export default function App() {
       <Footer />
     </>
   );
-}
+};

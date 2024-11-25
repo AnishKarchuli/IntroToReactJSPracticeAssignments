@@ -1,5 +1,3 @@
-import "./App.css";
-
 const UserStatus = ({ isOnline }) => (
   <p>{isOnline ? "User is online" : "User is offline"}</p>
 );
@@ -30,4 +28,4 @@ export default function App() {
       <ShowError showError={true} />
     </main>
   );
-}
+};

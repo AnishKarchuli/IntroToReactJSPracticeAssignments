@@ -1,5 +1,3 @@
-import './App.css'
-
 // props
 
 const Greeting = (props) => {
@@ -42,7 +40,6 @@ export default function App() {
       <UserDetails name="Bob" age={20} country="India" />
       <WeatherInfo temperature={29} condition="Sunny" />
       <UserAvatar img="https://via.placeholder.com/150" alt="placeholder" />
-      
     </div>
   )
 }

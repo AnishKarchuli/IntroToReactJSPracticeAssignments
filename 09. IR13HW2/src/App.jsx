@@ -1,5 +1,3 @@
-import './App.css'
-
 const WelcomeBanner = (props) => {
   return <h1>Welcome to {props.appName} App!</h1>
 }

@@ -1,5 +1,3 @@
-import './App.css'
-
 const Message = ({ isLoggedIn }) => {
   // if(isLoggedIn){
   //   return <p>Welcome Back, User!</p>

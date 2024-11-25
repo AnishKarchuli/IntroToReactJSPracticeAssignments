@@ -1,5 +1,3 @@
-import "./App.css";
-
 const BookInformation = () => {
   const book = {
     title: "1984",

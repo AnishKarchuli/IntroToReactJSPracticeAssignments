@@ -1,5 +1,3 @@
-import './App.css'
-
 const RandomNumber = () => {
   const ranNum = Math.floor(Math.random() * 100) + 1
   return (

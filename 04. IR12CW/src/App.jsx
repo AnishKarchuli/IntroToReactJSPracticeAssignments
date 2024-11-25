@@ -1,5 +1,3 @@
-import "./App.css";
-
 const StudentDetails = () => {
   const name = "Bob";
   const age = 20;

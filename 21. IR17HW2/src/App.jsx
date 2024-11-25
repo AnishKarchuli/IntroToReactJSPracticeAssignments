@@ -1,5 +1,3 @@
-import './App.css'
-
 const CreditCardPayment = ({ amount }) => <p>{amount > 1000 ? "Please use your credit card for payment." : "You can pay using cash or debit card."}</p>
 
 const ProductAvailability = ({ inStock }) => <p>{inStock ? "The product is available." : "Sorry, the product is currently out of stock."}</p>
@@ -20,4 +18,4 @@ export default function App() {
       <WeatherReport isSunny={false} />
     </main>
   )
-}
+};

@@ -1,5 +1,3 @@
-import './App.css'
-
 const GenerateGreeting = () => {
   const greeting = (name) => {
     return `Hello, ${name}!`

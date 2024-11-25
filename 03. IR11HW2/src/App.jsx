@@ -1,5 +1,3 @@
-import "./App.css";
-
 const WelcomeMessage = () => {
   return <h1>Discover the World of JSX!</h1>;
 };

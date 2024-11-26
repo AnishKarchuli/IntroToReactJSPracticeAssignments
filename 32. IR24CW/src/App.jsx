@@ -1,5 +1,3 @@
-import './App.css'
-
 const Products = ({ products, productId }) => {
 
   // for(let i = 0; i < products.length; i++){

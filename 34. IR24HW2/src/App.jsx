@@ -1,5 +1,3 @@
-import './App.css'
-
 const Cars = ({ cars, model }) => {
   const carDetail = cars.find(car => car.model === model)
   return (

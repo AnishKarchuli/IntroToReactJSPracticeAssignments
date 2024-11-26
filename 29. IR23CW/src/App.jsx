@@ -1,5 +1,3 @@
-import './App.css'
-
 const ProductList = ({ products }) => {
   const totalPrice = products.reduce((acc, curr) => acc + curr.price, 0)
   return (

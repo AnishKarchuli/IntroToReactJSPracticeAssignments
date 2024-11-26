@@ -1,5 +1,3 @@
-import './App.css'
-
 const FilteredCarList = ({ cars }) => {
   const filteredCars = cars.filter(car => car.price > 1500000 && car.price < 2000001)
 

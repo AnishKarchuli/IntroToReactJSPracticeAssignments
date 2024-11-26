@@ -1,5 +1,3 @@
-import './App.css'
-
 const FilteredLaptopList = ({ laptops }) => {
   const filteredLaptops = laptops.filter(laptop => laptop.price > 4999 && laptop.price < 15000)
 

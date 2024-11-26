@@ -1,5 +1,3 @@
-import './App.css'
-
 const ProductList = ({ products }) => {
   const productListing = products.map(product => (
     <div key={product.id}>

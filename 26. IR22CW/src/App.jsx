@@ -1,5 +1,3 @@
-import './App.css'
-
 const ProductList = ({ products }) => {
   const filteredProducts = products.filter(product => product.price >= 20 && product.price <= 50)
 
@@ -11,6 +9,7 @@ const ProductList = ({ products }) => {
       
     </div>
   ))
+
   return (
     <>
       <h2>Products</h2>
@@ -28,6 +27,7 @@ const Restaurants = ({ restaurants }) => {
       <p>Cuisine: {restaurant.cuisine}</p>
     </div>
   )
+
   return (
     <>
       <h2>Restaurants</h2>
@@ -46,6 +46,7 @@ const Videos = ({ videos }) => {
       <p>Views: {video.views}</p>
     </div>
   ))
+  
   return (
     <>
       <h2>Videos</h2>

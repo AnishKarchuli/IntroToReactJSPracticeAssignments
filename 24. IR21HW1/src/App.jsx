@@ -1,5 +1,3 @@
-import './App.css'
-
 const CarList = ({ cars }) => {
   const carListing = cars.map(car => (
     <div key={car.id}>

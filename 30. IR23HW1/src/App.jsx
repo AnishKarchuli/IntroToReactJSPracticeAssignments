@@ -1,5 +1,3 @@
-import './App.css'
-
 const Smartphone = ({ smartphones }) => {
   const totalPrice = smartphones.reduce((acc, curr) => acc + curr.price, 0)
   return (

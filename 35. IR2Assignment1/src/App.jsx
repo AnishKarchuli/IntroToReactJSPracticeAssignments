@@ -1,5 +1,3 @@
-import "./App.css";
-
 const BookDetail = ({ books }) => {
   const filterBookDetail = books.filter(
     (book) => book.genre === "Science Fiction",

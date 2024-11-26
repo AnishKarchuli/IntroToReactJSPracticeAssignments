@@ -1,5 +1,3 @@
-import './App.css'
-
 const Movies = ({ movies, name }) => {
   const movieDetail = movies.find(movie => movie.title === name)
   return(

@@ -1,5 +1,3 @@
-import './App.css'
-
 const TotalWordCount = ({ blogPosts }) => {
   const totalWordCount = blogPosts.filter(blog => blog.category === "Food").reduce((acc, curr) => acc + curr.content.split(' ').length, 0)
   return(

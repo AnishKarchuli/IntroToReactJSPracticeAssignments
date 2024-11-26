@@ -1,5 +1,3 @@
-import './App.css'
-
 const TotalCalorieBurned = ({ exercises }) => {
   const totalCalories = exercises.reduce((acc, curr) => acc + curr.caloriesBurned, 0)
   return(

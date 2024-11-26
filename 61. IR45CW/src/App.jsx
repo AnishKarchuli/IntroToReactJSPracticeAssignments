@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 const GenderForm = () => {
   const [gender, setGender] = useState("");

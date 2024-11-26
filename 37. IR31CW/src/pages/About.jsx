@@ -26,6 +26,6 @@ function About() {
       </p>
     </main>
   );
-}
+};
 
 export default About;

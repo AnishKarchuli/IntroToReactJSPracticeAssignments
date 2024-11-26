@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 const GreetUser = () => {
   const [userName, setUserName] = useState('');

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 const ValidatePhoneNumber = () => {
   const [phoneNumber, setPhoneNumber] = useState('')

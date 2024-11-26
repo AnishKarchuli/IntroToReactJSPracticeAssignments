@@ -7,4 +7,4 @@ export default function About(){
       <p>Join us as we emabark on a gastronorric journey, discovering hidden gems, iconic eateries, and innovative culinary trends. Wheather you're seasoned foodie or an adventurous diner, we invite you to explore, indulge, and savor the flavours of the world with us. Thank you for being part of our culinary community!</p>
     </main>
   )
-}
+};

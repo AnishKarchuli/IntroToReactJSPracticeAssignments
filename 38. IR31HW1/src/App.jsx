@@ -1,4 +1,3 @@
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function App() {
@@ -15,4 +14,4 @@ export default function App() {
       <p>456 Elm Street, Anytown, USA</p>
     </main>
   )
-}
+};

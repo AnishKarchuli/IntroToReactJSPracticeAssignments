@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 const FavoriteSports = () => {
   const [selectedSports, setSelectedSports] = useState([]);

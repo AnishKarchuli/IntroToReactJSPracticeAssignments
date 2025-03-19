@@ -3,9 +3,9 @@ import Header from "../components/Header";
 
 export default function () {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container mt-3">
+      <main className="container mt-3 flex-grow-1">
         <h1>About Airbnb</h1>
         <p>
           Welcome to Airbnb! We are committed to revolutionizing the way people
@@ -33,6 +33,6 @@ export default function () {
         </p>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

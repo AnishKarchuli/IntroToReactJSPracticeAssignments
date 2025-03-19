@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container mt-3">
+      <main className="container mt-3 flex-grow-1">
         <h1 className="display-2">Featured Products</h1>
         <div className="row">
           <div className="col-md-4">
             <div className="card my-2">
-              <img src="https://via.placeholder.com/400x300" alt="Product 1" className="card-img-top img-fluid rounded" />
+              <img src="https://placehold.co/400x300" alt="Product 1" className="card-img-top img-fluid rounded-top" />
               <div className="card-body">
                 <h4 className="card-title">Product 1</h4>
                 <p className="card-text">
@@ -25,7 +25,7 @@ export default function App() {
           </div>
           <div className="col-md-4">
             <div className="card my-2">
-              <img src="https://via.placeholder.com/400x300" alt="Product 2" className="card-img-top img-fluid rounded" />
+              <img src="https://placehold.co/400x300" alt="Product 2" className="card-img-top img-fluid rounded-top" />
               <div className="card-body">
                 <h4 className="card-title">Product 2</h4>
                 <p className="card-text">
@@ -38,7 +38,7 @@ export default function App() {
           </div>
           <div className="col-md-4">
             <div className="card my-2">
-              <img src="https://via.placeholder.com/400x300" alt="Product 3" className="card-img-top img-fluid rounded" />
+              <img src="https://placehold.co/400x300" alt="Product 3" className="card-img-top img-fluid rounded-top" />
               <div className="card-body">
                 <h4 className="card-title">Product 3</h4>
                 <p className="card-text">
@@ -52,6 +52,6 @@ export default function App() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -53,9 +53,9 @@ const StayDetails = () => {
   const stayData = stays.find((stay) => stay.id === parseInt(stayId));
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container mt-3 mb-5">
+      <main className="container mt-3 mb-5 flex-grow-1">
         <h1>{stayData.name}</h1>
         <p>Type: {stayData.type}</p>
         <p>Location: {stayData.location}</p>
@@ -71,7 +71,7 @@ const StayDetails = () => {
         <p>Price: {stayData.price}</p>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -3,19 +3,19 @@ import Header from "../components/Header";
 
 export default function Restaurants() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-4">
+      <main className="container py-4 flex-grow-1">
         <h1>Restaurants</h1>
         <div className="row">
           <div className="col-md-12">
             <div className="card">
-              <div className="row no-gutters">
+              <div className="row">
                 <div className="col-md-4">
                   <img
                     src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
                     alt="Taste of India"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded h-100"
                   />
                 </div>
                 <div className="col-md-8">
@@ -36,12 +36,12 @@ export default function Restaurants() {
         <div className="row mt-3">
           <div className="col-md-12">
             <div className="card">
-              <div className="row no-gutters">
+              <div className="row">
                 <div className="col-md-4">
                   <img
                     src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
                     alt="Pizza Paradise"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded h-100"
                   />
                 </div>
                 <div className="col-md-8">
@@ -61,6 +61,6 @@ export default function Restaurants() {
         </div>
       </main>
     <Footer />
-    </>
+    </div>
   );
 }

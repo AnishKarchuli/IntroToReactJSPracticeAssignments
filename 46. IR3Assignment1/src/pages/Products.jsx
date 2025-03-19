@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function Products (){
-
+export default function Products() {
   const products = [
     {
       id: "1",
@@ -13,7 +12,7 @@ export default function Products (){
       price: "$99.99",
       availableColors: ["Red", "Blue", "Green"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "2",
@@ -23,7 +22,7 @@ export default function Products (){
       price: "$129.99",
       availableColors: ["White", "Black"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "3",
@@ -33,7 +32,7 @@ export default function Products (){
       price: "$79.99",
       availableColors: ["Yellow"],
       isReturnApplicable: false,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "4",
@@ -43,38 +42,47 @@ export default function Products (){
       price: "$49.99",
       availableColors: ["Purple", "Yellow"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
   ];
-  
+
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container my-3">
+      <main className="container my-3 flex-grow-1">
         <h1>Products</h1>
         <div className="row">
-          {products.map(product => (
+          {products.map((product) => (
             <div className="col-md-12" key={product.id}>
-            <div className="card mt-3">
-              <div className="row no-gutters">
-                <div className="col-md-4">
-                  <img src="https://via.placeholder.com/300x300" className="img-fluid rounded w-100" alt={product.name} />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title">{product.name}</h5>
-                    <p>{product.description}</p>
-                    <p className="text-secondary">Price: {product.price}</p>
-                    <Link to={`/products/${product.id}`} className="btn btn-primary">View Product</Link>
-                  </div>  
+              <div className="card mt-3">
+                <div className="row">
+                  <div className="col-md-4">
+                    <img
+                      src="https://placehold.co/300x200"
+                      className="img-fluid rounded-start h-100 object-fit-cover"
+                      alt={product.name}
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h5 className="card-title">{product.name}</h5>
+                      <p>{product.description}</p>
+                      <p className="text-secondary">Price: {product.price}</p>
+                      <Link
+                        to={`/products/${product.id}`}
+                        className="btn btn-primary"
+                      >
+                        View Product
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          ))}  
+          ))}
         </div>
       </main>
       <Footer />
-    </>  
-  )
+    </div>
+  );
 }

@@ -9,7 +9,7 @@ export default function () {
     john_doe: {
       fullName: "John Doe",
       bio: "Software Developer | Tech Enthusiast",
-      imageUrl: "https://via.placeholder.com/250",
+      imageUrl: "https://placehold.co/250",
       followers: 1000,
       following: 500,
       posts: 50,
@@ -17,7 +17,7 @@ export default function () {
     jane_smith: {
       fullName: "Jane Smith",
       bio: "Graphic Designer | Nature Lover",
-      imageUrl: "https://via.placeholder.com/250",
+      imageUrl: "https://placehold.co/250",
       followers: 800,
       following: 300,
       posts: 40,
@@ -25,7 +25,7 @@ export default function () {
     alice_wonder: {
       fullName: "Alice Wonder",
       bio: "Travel Blogger | Foodie",
-      imageUrl: "https://via.placeholder.com/150",
+      imageUrl: "https://placehold.co/150",
       followers: 1200,
       following: 600,
       posts: 60,
@@ -35,11 +35,11 @@ export default function () {
   const user = userData[username];
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-3">
+      <main className="container mt-5 flex-grow-1">
         <div className="row">
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between gap-3">
             <div className="col-md-4">
               <img
                 src={user.imageUrl}
@@ -59,6 +59,6 @@ export default function () {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

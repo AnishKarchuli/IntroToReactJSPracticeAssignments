@@ -3,9 +3,9 @@ import Header from "../components/Header";
 
 function About() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-4">
+      <main className="container py-4 flex-grow-1">
         <h1>About Us</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -31,7 +31,7 @@ function About() {
         </p>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

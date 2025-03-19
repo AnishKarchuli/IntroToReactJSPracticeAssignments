@@ -4,7 +4,7 @@ const Addition = () => {
   return (
     <p>The result of {a} + {b} is {a + b}</p>
   )
-}
+};
 
 const TemperatureCalculator = () => {
   const celsius = 30
@@ -12,7 +12,7 @@ const TemperatureCalculator = () => {
   return (
     <p>{celsius} degree celsius is equal to {fahrenheit} Fahrenheit</p>
   )
-}
+};
 
 const CombinedOperations = () => {
   const a = 15
@@ -25,7 +25,7 @@ const CombinedOperations = () => {
       <p>{a} * {b} equals {a * b}</p>
     </div>
   )
-}
+};
 
 const Welcome = () => {
   const firstName = "John"

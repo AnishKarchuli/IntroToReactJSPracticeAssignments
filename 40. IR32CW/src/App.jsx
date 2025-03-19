@@ -4,14 +4,14 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-4">
+      <main className="container py-4 flex-grow-1">
         <h1>Latest Blogs</h1>
         <article>
           <h2>Blog 1</h2>
           <img
-            src="https://via.placeholder.com/500X200"
+            src="https://placehold.co/500x200"
             alt="blog 1"
             className="img-fluid rounded "
           />
@@ -31,7 +31,7 @@ export default function App() {
         <article>
           <h2>Blog 2</h2>
           <img
-            src="https://via.placeholder.com/500X200"
+            src="https://placehold.co/500x200"
             alt="blog 2"
             className="img-fluid rounded"
           />
@@ -50,6 +50,6 @@ export default function App() {
         </article>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

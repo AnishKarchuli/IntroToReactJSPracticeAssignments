@@ -30,15 +30,15 @@ const BlogDetails = () => {
   const blogData = blogs.find(blog => blog.id === parseInt(blogId))
   
   return (
-    <>
+    <div className='d-flex flex-column min-vh-100'>
       <Header />
-      <main className='container py-4'>
+      <main className='container py-4 flex-grow-1'>
         <h1>{blogData.title}</h1>
         <small>Posted on {blogData.datePosted}</small>
         <p className='pt-3'>{blogData.content}</p>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

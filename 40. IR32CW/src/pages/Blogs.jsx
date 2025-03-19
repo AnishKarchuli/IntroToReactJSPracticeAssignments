@@ -3,9 +3,9 @@ import Header from "../components/Header";
 
 export default function Blogs() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-4">
+      <main className="container py-4 flex-grow-1">
         <h1>Blogs</h1>
         <div>
           <div className="row">
@@ -48,6 +48,6 @@ export default function Blogs() {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

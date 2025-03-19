@@ -17,7 +17,7 @@ const LinkTag = () => {
 };
 
 const ImageTag = () => {
-  const imageUrl = "https://via.placeholder.com/150";
+  const imageUrl = "https://placehold.co/150";
   return (
     <div>
       <img src={imageUrl} alt="placeholder" />

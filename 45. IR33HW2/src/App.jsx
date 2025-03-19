@@ -4,9 +4,9 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container p-4">
+      <main className="container p-4 flex-grow-1">
         <h1 className="pb-2">Latest Listings</h1>
         <section>
           <img
@@ -46,6 +46,6 @@ export default function App() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

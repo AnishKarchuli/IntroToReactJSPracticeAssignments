@@ -1,3 +1,10 @@
+const CallGreetingFunction = () => {
+  const getGreeting = () => {
+    return "Hello World!";
+  };
+  return <h1>{getGreeting()}</h1>;
+};
+
 const MathOperations = () => {
   const a = 20;
   const b = 8;
@@ -19,22 +26,16 @@ const MathOperations = () => {
         {a} - {b} equals {getDifference(a, b)}
       </p>
     </div>
-  );
-};
-
-const CallGreetingFunction = () => {
-  const getGreeting = () => {
-    return "Hello World!";
-  };
-  return <h1>{getGreeting()}</h1>;
+  )
 };
 
 const GetFormattedDate = () => {
   const getCurrentDate = () => {
-    return new Date().toLocaleDateString()
-  }
-  return <p>Current Date: {getCurrentDate()}</p>
-}
+    return new Date().toLocaleDateString();
+  };
+
+  return <p>Current Date: {getCurrentDate()}</p>;
+};
 
 export default function App() {
   return (
@@ -43,5 +44,5 @@ export default function App() {
       <MathOperations />
       <GetFormattedDate />
     </main>
-  );
+  )
 };

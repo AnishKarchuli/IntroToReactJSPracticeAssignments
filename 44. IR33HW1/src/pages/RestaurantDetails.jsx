@@ -52,9 +52,9 @@ const RestaurantDetails = () => {
   );
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container mt-3 mb-5">
+      <main className="container mt-3 mb-5 flex-grow-1">
         <h1>{restaurantData.name}</h1>
         <p>Cuisine: {restaurantData.cuisine}</p>
         <p>Location: {restaurantData.location}</p>
@@ -76,7 +76,7 @@ const RestaurantDetails = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

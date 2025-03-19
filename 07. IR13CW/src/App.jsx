@@ -2,7 +2,7 @@
 
 const Greeting = (props) => {
   return <h1>Hello, {props.name} </h1>
-}
+};
 
 const UserDetails = (props) => {
   return (
@@ -13,7 +13,7 @@ const UserDetails = (props) => {
       <p>Country: {props.country}</p>
     </div>
   )
-}
+};
 
 const WeatherInfo = (props) => {
   return (
@@ -23,7 +23,7 @@ const WeatherInfo = (props) => {
       <p>Condition: {props.condition}</p>
     </div>
   )
-}
+};
 
 const UserAvatar = (props) => {
   return (
@@ -32,14 +32,15 @@ const UserAvatar = (props) => {
       <img src={props.img} alt={props.alt} />
     </div>
   )
-}
+};
+
 export default function App() {
   return (
     <div>
       <Greeting name="John"/>
       <UserDetails name="Bob" age={20} country="India" />
       <WeatherInfo temperature={29} condition="Sunny" />
-      <UserAvatar img="https://via.placeholder.com/150" alt="placeholder" />
+      <UserAvatar img="https://placehold.co/150" alt="placeholder" />
     </div>
   )
-}
+};

@@ -15,7 +15,7 @@ const ProductDetails = () => {
       price: "$99.99",
       availableColors: ["Red", "Blue", "Green"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "2",
@@ -25,7 +25,7 @@ const ProductDetails = () => {
       price: "$129.99",
       availableColors: ["White", "Black"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "3",
@@ -35,7 +35,7 @@ const ProductDetails = () => {
       price: "$79.99",
       availableColors: ["Yellow"],
       isReturnApplicable: false,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
     {
       id: "4",
@@ -45,16 +45,16 @@ const ProductDetails = () => {
       price: "$49.99",
       availableColors: ["Purple", "Yellow"],
       isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
+      productImageUrl: "https://placehold.co/300x200",
     },
   ];
 
   const productData = products.find(product => product.id === productId)
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container my-4">
+      <main className="container my-4 flex-grow-1">
         <h1>{productData.name}</h1>
         <img src={productData.productImageUrl} className="my-3" />
         <p>Price: {productData.price}</p>
@@ -63,7 +63,7 @@ const ProductDetails = () => {
         <p>Return Policy: {productData.isReturnApplicable ? "Return applicable within 7 days" : "Not Applicable"}</p>
       </main>
       <Footer />
-    </>
+    </div>
   )
   
 }

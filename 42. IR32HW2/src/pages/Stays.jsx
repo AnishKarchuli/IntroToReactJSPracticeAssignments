@@ -3,20 +3,20 @@ import Header from "../components/Header";
 
 export default function () {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container mt-3">
+      <main className="container mt-3 flex-grow-1">
         <h1>Featured Stays</h1>
         <section className="mt-2">
           <div className="row">
             <div className="col-md-12">
               <div className="card">
-                <div className="row no-gutters">
+                <div className="row">
                   <div className="col-md-4">
                     <img
                       src="https://images.unsplash.com/photo-1582610116397-edb318620f90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D"
                       alt="Stay 1"
-                      className="img-fluid rounded"
+                      className="img-fluid rounded h-100"
                     />
                   </div>
                   <div className="col-md-8">
@@ -41,12 +41,12 @@ export default function () {
           <div className="row">
             <div className="col-md-12">
               <div className="card">
-                <div className="row no-gutters">
+                <div className="row">
                   <div className="col-md-4">
                     <img
                       src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvcGVydGllc3xlbnwwfHwwfHx8MA%3D%3D"
                       alt=" Stay 2"
-                      className="img-fluid rounded"
+                      className="img-fluid rounded h-100"
                     />
                   </div>
                   <div className="col-md-8">
@@ -71,12 +71,12 @@ export default function () {
           <div className="row">
             <div className="col-md-12">
               <div className="card">
-                <div className="row no-gutters">
+                <div className="row">
                   <div className="col-md-4">
                     <img
                       src="https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb3BlcnRpZXN8ZW58MHx8MHx8fDA%3D"
                       alt=" Stay 3"
-                      className="img-fluid rounded"
+                      className="img-fluid rounded h-100"
                     />
                   </div>
                   <div className="col-md-8">
@@ -102,12 +102,12 @@ export default function () {
           <div className="row">
             <div className="col-md-12">
               <div className="card">
-                <div className="row no-gutters">
+                <div className="row">
                   <div className="col-md-4">
                     <img
                       src="https://images.unsplash.com/photo-1610569244414-5e7453a447a8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvcGVydGllc3xlbnwwfHwwfHx8MA%3D%3D"
                       alt=" Stay 4"
-                      className="img-fluid rounded"
+                      className="img-fluid rounded h-100"
                     />
                   </div>
                   <div className="col-md-8">
@@ -131,6 +131,6 @@ export default function () {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

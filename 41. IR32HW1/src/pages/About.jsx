@@ -3,9 +3,9 @@ import Header from "../components/Header";
 
 export default function About() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container py-5">
+      <main className="container py-5 flex-grow-1">
         <h1>About Our Restaurants</h1>
         <p>
           Welcome to our restaurant guide! We are passionate about exploring and
@@ -28,6 +28,6 @@ export default function About() {
         </p>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

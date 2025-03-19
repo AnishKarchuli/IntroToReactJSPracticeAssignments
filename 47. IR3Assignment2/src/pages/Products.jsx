@@ -2,49 +2,50 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+export const products = [
+  {
+    id: "1",
+    name: "Product 1",
+    description:
+      "This is Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 99.99,
+    availableColors: ["Red", "Blue", "Green"],
+    isReturnApplicable: true,
+    productImageUrl: "https://placehold.co/300x200",
+  },
+  {
+    id: "2",
+    name: "Product 2",
+    description:
+      "This is Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 129.99,
+    availableColors: ["White", "Black"],
+    isReturnApplicable: true,
+    productImageUrl: "https://placehold.co/300x200",
+  },
+  {
+    id: "3",
+    name: "Product 3",
+    description:
+      "This is Description of Product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 79.99,
+    availableColors: ["Yellow"],
+    isReturnApplicable: false,
+    productImageUrl: "https://placehold.co/300x200",
+  },
+  {
+    id: "4",
+    name: "Product 4",
+    description:
+      "This is Description of Product 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 49.99,
+    availableColors: ["Purple", "Yellow"],
+    isReturnApplicable: true,
+    productImageUrl: "https://placehold.co/300x200",
+  },
+];
+
 export default function Products() {
-  const products = [
-    {
-      id: "1",
-      name: "Product 1",
-      description:
-        "This is Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 99.99,
-      availableColors: ["Red", "Blue", "Green"],
-      isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
-    },
-    {
-      id: "2",
-      name: "Product 2",
-      description:
-        "This is Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 129.99,
-      availableColors: ["White", "Black"],
-      isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
-    },
-    {
-      id: "3",
-      name: "Product 3",
-      description:
-        "This is Description of Product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 79.99,
-      availableColors: ["Yellow"],
-      isReturnApplicable: false,
-      productImageUrl: "https://via.placeholder.com/300x200",
-    },
-    {
-      id: "4",
-      name: "Product 4",
-      description:
-        "This is Description of Product 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 49.99,
-      availableColors: ["Purple", "Yellow"],
-      isReturnApplicable: true,
-      productImageUrl: "https://via.placeholder.com/300x200",
-    },
-  ];
 
   const affordableProducts = products.filter((product) => product.price < 85);
 
@@ -57,11 +58,11 @@ export default function Products() {
           {products.map((product) => (
             <div className="col-md-12" key={product.id}>
               <div className="card mt-3">
-                <div className="row no-gutters">
+                <div className="row">
                   <div className="col-md-4">
                     <img
-                      src="https://via.placeholder.com/300x300"
-                      className="img-fluid rounded w-100"
+                      src={product.productImageUrl}
+                      className="img-fluid rounded-start h-100 object-fit-cover"
                       alt={product.name}
                     />
                   </div>

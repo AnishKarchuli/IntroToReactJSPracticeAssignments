@@ -13,9 +13,9 @@ export default function () {
   }
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Header />
-      <main className="container my-3">
+      <main className="container my-3 flex-grow-1">
         <h1>Shopping Cart</h1>
         <div className="row pt-2">
           {cart.map((item) => (
@@ -41,6 +41,6 @@ export default function () {
         <h4 className="fw-semibold">Total Price: ${calculateTotalPrice()}</h4>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

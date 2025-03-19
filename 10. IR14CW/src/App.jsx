@@ -11,7 +11,7 @@ const Header = () => {
       </nav>
     </header>  
   )
-}
+};
 
 /*
 const EmployeeDetails = (props) => {
@@ -23,7 +23,7 @@ const EmployeeDetails = (props) => {
       <p>Department: {props.employee.department}</p>
       <p>Email: {props.employee.email}</p>
     </div>
-  );
+  )
 };
 */
 
@@ -36,7 +36,7 @@ const EmployeeDetails = ({ employee }) => {
       <p>Department: {employee.department}</p>
       <p>Email: {employee.email}</p>
     </div>
-  );
+  )
 };
 
 const Footer = () => {
@@ -44,7 +44,7 @@ const Footer = () => {
     <footer>
       <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
-  );
+  )
 };
 
 export default function App() {
@@ -63,5 +63,5 @@ export default function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 };
